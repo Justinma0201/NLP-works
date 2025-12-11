@@ -237,7 +237,7 @@ print(f"Accuracy (Combined Logic): {accuracy_score:.2%}")
 print(f"Recall@1: {recall_1_score:.2%}")
 print(f"Recall@5: {recall_5_score:.2%}")
 
-json_filename = "NLP_HW4_NTHU_114064558.json"
+json_filename = "result.json"
 
 with open(json_filename, "w", encoding="utf-8") as f:
     json.dump(final_results, f, ensure_ascii=False, indent=4)
@@ -306,7 +306,7 @@ print(f"Accuracy (Containment logic): {accuracy_score:.2%}")
 print(f"Recall@1: {recall_1_score:.2%}")
 print(f"Recall@5: {recall_5_score:.2%}")
 
-json_filename = "NLP_HW4_NTHU_114064558_reverse.json"
+json_filename = "result_reverse.json"
 
 with open(json_filename, "w", encoding="utf-8") as f:
     json.dump(final_results, f, ensure_ascii=False, indent=4)
@@ -558,5 +558,6 @@ print(f"\n===== JSON Format Results =====")
 print(f"Accuracy: {json_correct / len(queries):.2%}")
 print(f"Recall@1: {json_recall_1 / len(queries):.2%}")
 print(f"Recall@5: {json_recall_5 / len(queries):.2%}")
+
 
 
